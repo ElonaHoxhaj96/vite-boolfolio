@@ -7,10 +7,10 @@
 <template>
     <div>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Chi siamo</a></li>
-            <li><a href="#">I miei Post</a></li>
-            <li><a href="#">Contatti</a></li>
+            <li> <router-link :to="{name:'home2'}">Home</router-link></li>
+            <li> <router-link :to="{name:'about'}">Chi simo</router-link></li>
+            <li> <router-link :to="{name:'blog'}">I miei Post</router-link></li>
+            <li> <router-link :to="{name:'contacts'}">Contatti</router-link></li>
         </ul>
     </div>
 
