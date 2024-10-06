@@ -1,13 +1,25 @@
 <script>
 import axios from 'axios';
+import { store } from '../store/store';
 
     export default{
         name: 'Blog',
+        data(){
+            return{
+
+            }
+        },
+
         methods:{
             getApi(){
-                axios.get('http://127.0.0.1:8000/api/posts')
+                axios.get(store.apiUrl + 'posts')
                     .then(result => {
-                        console.log(result.data)
+                        this.posts = result.data.data
+                        console.log(this.posts);
+                    })
+
+                    .catch(error => {
+                        console.log(message.error);
                     })
             }
         },

@@ -1,5 +1,7 @@
 <script >
   import NavBar from './components/partials/NavBar.vue';
+
+
   export default{
     components:{
       NavBar
